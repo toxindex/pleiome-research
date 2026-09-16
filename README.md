@@ -4,6 +4,8 @@ Pleiome predicts molecular properties from a directed molecular graph and a requ
 
 This research derivative of [toxindex/pleiome](https://github.com/toxindex/pleiome) has independent Git history. The release focuses on model research and local reproduction.
 
+New readers and integrators: [start here](docs/getting-started.md) for a reading path, prediction meanings, public links, and the distinction between local research and hosted access.
+
 ## Released model
 
 | Component | Verified contents |
