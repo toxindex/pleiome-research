@@ -1,0 +1,73 @@
+{
+  "model": "Pleiome 0.4 / v4",
+  "checkpoint": {
+    "path": "best.pt",
+    "bytes": 2231395316,
+    "sha256": "486bf984b7a94b609880c1b7a002c3c6bd8bed73f8f8fc6ecb44cfa73ed1f28f",
+    "step": 120000
+  },
+  "num_properties": 181007,
+  "files": [
+    {
+      "path": "weights.part00",
+      "bytes": 1073741824,
+      "sha256": "bc9ad2150979ed7ad3382740974ab46129a213fc90b61e52bd5fb8c746222cad",
+      "role": "checkpoint_part"
+    },
+    {
+      "path": "weights.part01",
+      "bytes": 1073741824,
+      "sha256": "fc686d1bbe012b045fe57dc3188c69a25c7a648acc5e209b840d52214ddba0d7",
+      "role": "checkpoint_part"
+    },
+    {
+      "path": "weights.part02",
+      "bytes": 83911668,
+      "sha256": "c1c275053556512575236a50537a61de9bff1727e86450e282c6adad7412798d",
+      "role": "checkpoint_part"
+    },
+    {
+      "path": "properties.jsonl.gz",
+      "bytes": 9020910,
+      "sha256": "1e1e931dda15efe516d3f47ab45d0dbca7a0aa135b28496ccf93c721fb79b49c",
+      "role": "metadata"
+    },
+    {
+      "path": "raw_pids.npy",
+      "bytes": 1448184,
+      "sha256": "abfae0fda518becdcd9671c9d6618c180887f11b3de520de0cb7f0ddba4628f8",
+      "role": "metadata"
+    },
+    {
+      "path": "tokenizer/selfies_tokenizer.json",
+      "bytes": 85016,
+      "sha256": "0f3d25daacf41ad51ff07ea02a6161c2966943a4ab1c653d864fc47f57128195",
+      "role": "metadata"
+    },
+    {
+      "path": "tokenizer/selfies_property_val_tokenizer.json",
+      "bytes": 158,
+      "sha256": "7fd07d5a21dddf564c3e16af657a5ee46e69d0096033993df277586951f7b939",
+      "role": "metadata"
+    },
+    {
+      "path": "architecture.json",
+      "bytes": 214,
+      "sha256": "175a62c8f3dca6ad97fcb825fe03d981507256ef70130e0d503773feaaa57840",
+      "role": "metadata"
+    }
+  ],
+  "parameters": 557464475,
+  "catalog_audit": {
+    "properties": 181007,
+    "training_shards_read": 72,
+    "compact_to_raw_ids_match": true,
+    "type_disagreements": 0,
+    "counts": {
+      "binary": 164967,
+      "numeric": 14323,
+      "categorical": 1717
+    },
+    "missing_source_property_ids": 17806
+  }
+}

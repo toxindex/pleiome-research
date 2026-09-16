@@ -1,0 +1,101 @@
+{
+  "description": "Numerical regression examples from upstream Pleiome code with explicit training-catalog types. No accuracy claim. Self-conditioning uses model predictions, not observed labels.",
+  "upstream_commit": "67b3bcd",
+  "device": "cpu",
+  "dtype": "float32",
+  "threads": 1,
+  "versions": {
+    "torch": "2.8.0+cpu",
+    "rdkit": "2024.3.5",
+    "numpy": "1.26.4",
+    "selfies": "2.1.2"
+  },
+  "atol": 1e-05,
+  "rtol": 1e-05,
+  "cases": [
+    {
+      "name": "binary-structure-only",
+      "smiles": [
+        "CCO",
+        "CC(=O)Oc1ccccc1C(=O)O"
+      ],
+      "property_indices": [
+        174208,
+        174209,
+        174210
+      ],
+      "types": [
+        "binary",
+        "binary",
+        "binary"
+      ],
+      "rounds": 1,
+      "values": [
+        [
+          0.6020057201385498,
+          0.8881229162216187,
+          0.46309077739715576
+        ],
+        [
+          0.2646218538284302,
+          0.19397345185279846,
+          0.41314229369163513
+        ]
+      ]
+    },
+    {
+      "name": "mixed-types",
+      "smiles": [
+        "CCO",
+        "c1ccccc1"
+      ],
+      "property_indices": [
+        174208,
+        165254,
+        165255
+      ],
+      "types": [
+        "binary",
+        "numeric",
+        "numeric"
+      ],
+      "rounds": 1,
+      "values": [
+        [
+          0.5892335176467896,
+          0.008898735046386719,
+          110.34358215332031
+        ],
+        [
+          0.22321666777133942,
+          3.7159910202026367,
+          334.77398681640625
+        ]
+      ]
+    },
+    {
+      "name": "binary-self-conditioned",
+      "smiles": [
+        "CCO"
+      ],
+      "property_indices": [
+        174208,
+        174209,
+        174210
+      ],
+      "types": [
+        "binary",
+        "binary",
+        "binary"
+      ],
+      "rounds": 3,
+      "values": [
+        [
+          0.5107204914093018,
+          0.9014265537261963,
+          0.46309077739715576
+        ]
+      ]
+    }
+  ]
+}

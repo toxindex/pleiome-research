@@ -1,0 +1,97 @@
+{
+  "upstream": "https://github.com/toxindex/pleiome",
+  "commit": "67b3bcd06af18c4e187000e9a02860a528758302",
+  "history": "Independent Git history. Deployment code and upstream Git objects are excluded.",
+  "files": [
+    {
+      "path": "src/pleiome/dmpnn_encoder.py",
+      "upstream_sha256": "836f35a13380b05a484653a14cfd768f400ba3bf42a5737e922a602c9aef2d14"
+    },
+    {
+      "path": "src/pleiome/typed_model.py",
+      "upstream_sha256": "433101503e13b951694ff9a7f594335cc82700fb81254b032bca82648ddb8c14"
+    },
+    {
+      "path": "src/pleiome/unified_model.py",
+      "upstream_sha256": "787d1516f14019de52e7fab175ad67dbd2ac24c410fbf8d4d3b59912ed4c29a9"
+    },
+    {
+      "path": "src/pleiome/proptypes.py",
+      "upstream_sha256": "b93e27281952a12827800d2cc5966aa1c7f639365ec593583164690a4a47a871"
+    },
+    {
+      "path": "src/pleiome/cvae/__init__.py",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/pleiome/cvae/tokenizer/__init__.py",
+      "upstream_sha256": "41adc0906a3a035cd965a956887765fee6fecc7602f95560c017bb8672b03bbb"
+    },
+    {
+      "path": "src/pleiome/cvae/tokenizer/selfies_property_val_tokenizer.py",
+      "upstream_sha256": "8239387a9c4cb41d9e6a8b5cd33d9088887a8d9d6edf86e32dc641a9857fac16"
+    },
+    {
+      "path": "src/pleiome/cvae/tokenizer/selfies_tokenizer.py",
+      "upstream_sha256": "d408c250ea37af5a7f02ea01cd29ca97677b7aa358a876ab488848cf7b86d925"
+    }
+  ],
+  "historical_files": [
+    {
+      "path": "reference/preprocessing/normalize_bricks.py",
+      "source_sha256": "508e9cf1060ad48e656d8e44eba15181e901cdacde70ab111cb60a71fe52dfe1",
+      "source": "Recovered training workspace; source revision unavailable"
+    },
+    {
+      "path": "reference/preprocessing/merge_expanded.py",
+      "source_sha256": "2c628cc8db3ffd5ac3116681ad40c27b69a215f371fc2c865a3c826e930a2615",
+      "source": "Recovered training workspace; source revision unavailable"
+    },
+    {
+      "path": "reference/preprocessing/normalize_properties.py",
+      "source_sha256": "a61584fe283b70798bca7a572ebaab75ecf0258c918001126a15d0dc57de086f",
+      "source": "Recovered training workspace; source revision unavailable"
+    },
+    {
+      "path": "reference/preprocessing/filter_binary.py",
+      "source_sha256": "838d38d4ec935d4b4d3295fcc9e94e7e268196753aab4990ca078d1e9fe23728",
+      "source": "Recovered training workspace; source revision unavailable"
+    },
+    {
+      "path": "reference/preprocessing/combine_multitype.py",
+      "source_sha256": "890b963e25ff7120e2c035bf4d5ac18974450cbd2f17a2cd6e6f4602e03a0329",
+      "source": "Recovered training workspace; source revision unavailable"
+    },
+    {
+      "path": "reference/preprocessing/merge_props.py",
+      "source_sha256": "87b47c7143578f60506cd99e426f3d2c0c70aee25dc48b2a92ae0484516d5753",
+      "source": "Recovered training workspace; source revision unavailable"
+    },
+    {
+      "path": "reference/training/precompute_graphs.py",
+      "source_sha256": "57a16df624c7557a65851111f141690ec442e2d843480b6f4ad847a3a61a0d37",
+      "source": "Recovered training workspace; source revision unavailable"
+    },
+    {
+      "path": "reference/training/train_typed.py",
+      "source_sha256": "4e7c81ae233c3b7f73c917fae3b7c30c1ddf07f62e9d25cb70fb9c42a75fad24",
+      "source": "Recovered training workspace; source revision unavailable"
+    },
+    {
+      "path": "reference/training/unified_train.py",
+      "source_sha256": "637ff46525660ddf37d7a56ac48c2360591d2c4969a36418ec1f3eb3c16c8953",
+      "source": "Recovered training workspace; source revision unavailable"
+    },
+    {
+      "path": "reference/training/unified_eval.py",
+      "source_sha256": "a33acc55244700f114dccea9305cc29c20c38c848fb68ab59b791f97166a7bca",
+      "source": "Recovered training workspace; source revision unavailable"
+    }
+  ],
+  "checkpoint_lineage": {
+    "model": "Pleiome v4",
+    "step": 120000,
+    "sha256": "486bf984b7a94b609880c1b7a002c3c6bd8bed73f8f8fc6ecb44cfa73ed1f28f",
+    "evidence": "Byte-identical to the saved v4 best checkpoint. Launcher recovered; exact prior initialization and immutable input snapshots are not distributed."
+  }
+}

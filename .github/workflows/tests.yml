@@ -1,0 +1,20 @@
+name: Research checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  cpu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          lfs: true
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          version: "0.7.21"
+      - run: uv sync --locked --extra dev --python 3.11
+      - run: uv run --locked ruff check src/pleiome_research tests
+      - run: uv run --locked pytest -q
+      - run: uv run --locked pleiome reproduce
+      - run: uv run --locked pleiome train --output runs/ci
+      - run: uv run --locked pleiome evaluate --run runs/ci --split test

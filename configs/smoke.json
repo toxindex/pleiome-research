@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "epochs": 3,
+  "batch_size": 4,
+  "learning_rate": 0.001,
+  "known_fraction": 0.5,
+  "generation_weight": 0.2,
+  "architecture": {
+    "d_model": 32,
+    "nhead": 4,
+    "struct_layers": 3,
+    "slot_layers": 1,
+    "gen_layers": 1,
+    "gen_max_len": 64
+  }
+}

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pleiome-research"
+version = "0.1.0"
+description = "Pleiome molecular graph architecture and reproducible research workflows"
+requires-python = ">=3.11,<3.13"
+license = "MIT"
+dependencies = ["torch==2.8.0", "numpy==1.26.4", "rdkit==2024.3.5", "selfies==2.1.2", "scikit-learn==1.7.2"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2", "ruff==0.13.0"]
+
+[project.scripts]
+pleiome = "pleiome_research.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = ["reference", "src/pleiome"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

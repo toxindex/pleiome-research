@@ -1,0 +1,12 @@
+{
+  "selfies_vocab": 2467,
+  "pad_idx": 0,
+  "num_properties": 181007,
+  "encoder_type": "dmpnn",
+  "d_model": 768,
+  "nhead": 8,
+  "struct_layers": 8,
+  "slot_layers": 8,
+  "gen_layers": 6,
+  "gen_max_len": 128
+}
